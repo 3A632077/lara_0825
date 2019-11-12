@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    Post::destroy(2);
+    Post::destroy(3,4,5);
 
 });
 
