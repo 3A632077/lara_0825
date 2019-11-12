@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    \App\Post::create([
-        'title'=>'testtitle',
-        'content'=>'testcontent',
+    $post=new Post();
+    $post->title='test title';
+    $post->content='test content';
+    $post->save();
     ]);
 
 
