@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $post=Post::find(1);
+    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
     dd($post);
 });
 
