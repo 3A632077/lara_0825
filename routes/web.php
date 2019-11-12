@@ -13,7 +13,10 @@
 
 Route::get('/', function () {
     $post=Post::find(1);
-    $post->update(['title'=>'be chaned','content'=>'update']);
+    $post->title='save after';
+    $post->content='save after';
+    $post->save();
+
 });
 
 
