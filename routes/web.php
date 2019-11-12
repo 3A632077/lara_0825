@@ -16,10 +16,9 @@ Route::get('/', function () {
     $post->title='test title';
     $post->content='test content';
     $post->save();
-    ]);
-
-
 });
+
+
 Route::get('posts',['as'=>'posts.index','uses'=>'PostsController@index']);
 Route::get('post',['as'=>'posts.show','uses'=>'PostsController@show']);
 Route::get('about',['as'=>'posts.about','uses'=>'PostsController@about']);
