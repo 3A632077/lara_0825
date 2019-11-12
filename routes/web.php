@@ -12,10 +12,8 @@
 */
 
 Route::get('/', function () {
-    $post=new Post();
-    $post->title='test title';
-    $post->content='test content';
-    $post->save();
+    $post=Post::all();
+    dd($post);
 });
 
 
